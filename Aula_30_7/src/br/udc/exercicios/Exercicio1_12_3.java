@@ -15,7 +15,7 @@ public class Exercicio1_12_3 {
 		
 		hora.setHora(horas);
 		
-		hora.mostrarHora(horas, minuto);
+		//hora.mostrarHora(horas, minuto);
 		
 	}
 
