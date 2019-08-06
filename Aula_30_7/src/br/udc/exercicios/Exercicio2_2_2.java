@@ -5,6 +5,7 @@ import java.util.Scanner;
 public class Exercicio2_2_2 {
 
 	public static void main(String[] args) {
+		
 		int numero1,numero2,somatorio,dife;
 		
 		Scanner sc = new Scanner(System.in);
