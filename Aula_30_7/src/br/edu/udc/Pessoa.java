@@ -24,10 +24,22 @@ public class Pessoa {
 			return;
 		cpf = val;
 	}
+	
+	public Pessoa(){
+		this.nome = "";
+		this.cpf = 0;
+		this.rg = 0;
+	}
+	
+	public Pessoa(String nome, int rg, int cpf){
+		this.nome = nome;
+		this.cpf = cpf;
+		this.rg = rg;
+	}
 
 	@Override
 	public String toString() {
-		return "Pessoa [nome=" + nome + ", rg=" + rg + ", cpf=" + cpf + "]";
+		return "nome=" + nome + ", rg=" + rg + ", cpf=" + cpf;
 	}
 	
 }
