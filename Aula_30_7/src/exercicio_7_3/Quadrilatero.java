@@ -88,6 +88,13 @@ public class Quadrilatero {
 	public void setDY(int dY) {
 		DY = dY;
 	}
+
+	@Override
+	public String toString() {
+		return "(" + AX + ", " + AY + ") (" + BX + ", "
+				+ BY + ") (" + CX + ", " + CY + ") (" + DX + ", "
+				+ DY + ")";
+	}
 	
 	
 }

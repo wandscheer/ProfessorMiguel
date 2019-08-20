@@ -10,6 +10,17 @@ public class Aplicacao_7_3 {
 		
 		//metodo quadrado ser quadrado;
 		
+		qua.setAX(1);
+		qua.setAY(2);
+		qua.setBX(3);
+		qua.setBY(4);
+		qua.setCX(5);
+		qua.setCY(6);
+		qua.setDX(7);
+		qua.setDY(8);
+		
+		System.out.println(qua);
+		
 	}
 
 }
