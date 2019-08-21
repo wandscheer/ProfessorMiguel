@@ -15,7 +15,7 @@ public class Servente extends Pessoa{
 
 	@Override
 	public String toString() {
-		return "Servente [setor=" + setor + "]";
+		return super.toString()+ " Servente [setor=" + setor + "]";
 	}
 
 	public String getSetor() {

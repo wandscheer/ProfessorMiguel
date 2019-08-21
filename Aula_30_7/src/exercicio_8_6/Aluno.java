@@ -5,9 +5,8 @@ public class Aluno extends Pessoa{
 	int serie;
 	
 	public Aluno(){
-		this.curso="";
-		this.serie=0;
-		this.nome="";
+		curso="";
+		serie=0;
 	}
 	
 	public Aluno(String nome, String curso, int serie){
@@ -18,7 +17,7 @@ public class Aluno extends Pessoa{
 
 	@Override
 	public String toString() {
-		return "Aluno: [curso=" + curso + ", serie=" + serie + "]";
+		return super.toString()+" Aluno: [curso=" + curso + ", serie=" + serie + "]";
 	}
 
 	public String getCurso() {

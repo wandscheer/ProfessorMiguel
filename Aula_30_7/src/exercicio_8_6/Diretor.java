@@ -15,7 +15,7 @@ public class Diretor extends Pessoa{
 
 	@Override
 	public String toString() {
-		return "Diretor [ano=" + ano + "]";
+		return super.toString()+ " Diretor [ano=" + ano + "]";
 	}
 
 	public int getAno() {
