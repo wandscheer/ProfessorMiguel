@@ -1,34 +1,46 @@
 package exercicio_7_1;
 
 public class Linha2D {
-	public double x1, x2, y1, y2;
+	private Ponto2D a;
+	private Ponto2D b;
 	
-	public void setPonto1(double x1, double y1){
-		this.x1=x1;
-		this.y1=y1;
+	public Linha2D(){
+		a = new Ponto2D();
+		b = new Ponto2D();
 	}
 	
-	public void setPonto2(double x2, double y2){
-		this.x2=x2;
-		this.y2=y2;
+	public Ponto2D getA() {
+		return a;
 	}
 
-	public double getX1() {
-		return x1;
+	public void setA(Ponto2D a) {
+		this.a = a;
 	}
 
-	public double getX2() {
-		return x2;
+	public Ponto2D getB() {
+		return b;
 	}
 
-	public double getY1() {
-		return y1;
+	public void setB(Ponto2D b) {
+		this.b = b;
 	}
 
-	public double getY2() {
-		return y2;
+	public Linha2D(Ponto2D a, Ponto2D b){
+		this.a=a;
+		this.b=b;
 	}
-
 	
+	public Ponto2D centro(){
+		return new Ponto2D((a.getX())+(b.getX())/2,
+								(a.getY())+(b.getY())/2);
+	}
 	
+	public float distancia(Ponto2D pt){
+		return centro().distancia(pt);
+	}
+
+	@Override
+	public String toString() {
+		return ""+ a + ", " + b + "";
+	}
 }
